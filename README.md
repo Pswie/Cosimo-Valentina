@@ -1,2 +1,1 @@
-# LandingWedding
-QRCode Landing Page
+Vale Page  WEd
