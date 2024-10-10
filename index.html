@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv='cache-control' content='no-cache'> 
+    <meta http-equiv='expires' content='0'> 
+    <meta http-equiv='pragma' content='no-cache'>   
+    <title>Carina & Tiago</title>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+    <script src="./js.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header>
+        <div class="header row container">
+            <a href="#" class="logo mobile"><img src="./imgs/LogoT&C.svg" alt=""></a>
+            <div class="toggleMenu" onclick="toggleMenu();"></div>
+            <nav class="navigation row">
+                <ul class="row">
+                    <li><a href="#">O Menu</a></li>
+                    <li><a href="#story">A História</a></li>
+                    <li><a href="#venue">A Quinta</a></li>
+                    <li class="desktop"><a href="#"><img src="./imgs/LogoT&C.svg" alt=""></a></li>
+                    <li><a href="#itinerary">O Itenerário</a></li>
+                    <li><a href="#accommodation">Os Alojamentos</a></li>
+                    <li><a href="#rsvp">A tua Resposta</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- End Navigation -->
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <video src="./video.mp4"controls autoplay loop muted></video>
+        <div class="hero-content row container">
+            <div>
+                <h1>Cosimo <span>&</span> Valentina</h1>
+                <h2>08/09/2025</h2>
+            </div>
+        </div>
+    </section>
+    <!-- ENd Hero Section -->
+
+    <!-- Story -->
+    <section class="story" id="story">
+        <div class="container">
+            <h1>A Nossa História</h1>
+            <div class="story-content">
+                <div class="row flex">
+                    <div>
+                        <p>Passaram cinco anos. Cinco anos desde o dia em que soubemos,
+                            que mesmo que não fosse para sempre, o que quer que fosse seria
+                            muito bom.
+                            
+                            Tivemos a oportunidade de criar, durante estes mesmos cinco
+                            anos, a mais bonita família.
+                            Temos hoje, a quantidade certa de amigos que são casa, sogros e
+                            sogras que são pais, cunhadas e cunhados que são irmãos, uma
+                            quantidade infima de primos e tios, temos mais avôs, mesmo que
+                            num outro lugar, e temos dois afilhados que são nossos filhos,
+                            daqueles que só não saíram de nós.</p>
+                    </div>
+                    <div class="img row"><img src="./imgs/im1.png" alt=""></div>
+                </div>
+                <div class="row flex">
+                    <div>
+                        <p>Fomos incansavelmente o abrigo um do outro, fomos e somos
+                            também, a tempestade um do outro. Estaremos ligados para
+                            sempre, mesmo quando existir sobrecarga de energia. Somos os
+                            opostos que se atraem todos os dias, seremos um do outro para o
+                            que der e vier, porque somos uma aposta ganha em qualquer
+                            malmequer.</p>
+                    </div>
+                    <div class="img row"><img src="./imgs/im2.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Story -->
+
+    <!-- The Venue -->
+    <section class="venue" id="venue">
+        <div class="row flex container">
+            <div class="venue-content">
+                <h5>A Quinta</h5>
+                <h2>Quinta da Terrincha</h2>
+                <p>Um Vale, Uma Paixão.
+
+                    A Quinta da Terrincha, situada no mais bonito Vale de Portugal,
+                    no conhecido Vale da Vilariça, oferece-lhe uma experiência
+                    turística única, de contacto com a natureza. As vistas de cortar a respiração apresentam-se como,
+                     o mote perfeito, para celebrar o amor.
+                    </p>
+                <div>
+                    <p>Estrada Nacional, 102</p>
+                    <p>5160-020 Adeganha</p>
+                </div>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./imgs/1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./imgs/2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./imgs/3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./imgs/4.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./imgs/5.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./imgs/6.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End The Venue -->
+
+    <!-- Itinerary -->
+    <section class="itinerary" id="itinerary">
+        <div class="container">
+            <h2>Itenerário</h2>
+            <div class="filter-btns row">
+                <div class="filter-btn active" data-tab="1">Inicio</div>
+                <div class="filter-btn" data-tab="2">Cerimónia</div>
+                <div class="filter-btn" data-tab="3">Na Quinta</div>
+            </div>
+            <div class="filter-cards tab1 t-active">
+                <div class="row">
+                    <div class="time">
+                        <h5>10:00H</h5>
+                    </div>
+                    <div>
+                        <h3>Sabrosa - Casa Do Noivo - Salgueiros</h3>
+                        <p>Convidamos todos os familiares e amigos,
+                            a estarem presentes em casa do noivo por volta das 10H, para
+                            depois seguirem viagem, o mais tardar às 11H.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="time">
+                        <h5>12:15H</h5>
+                    </div>
+                    <div>
+                        <h3>Larinho</h3>
+                        <p>Convidamos todos os familiares e amigos,
+                            a deslocarem-se diretamente para a Basílica, 
+                            o mais tardar às 12:15H.</p>
+                    
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="time">
+                        <h5>12:20H</h5>
+                    </div>
+                    <div>
+                        <h3>Torre de Moncorvo</h3>
+                        <p>Pedimos a todos os nossos convidados, que estacionem os carros
+                            no largo da feira (junto à ACIM), de modo que o percurso para a
+                            quinta, seja feito da forma mais fluida possível.</p>
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="filter-cards tab2">
+                <div class="row">
+                    <div class="time">
+                        <h5>12:30H</h5>
+                    </div>
+                    <div>
+                        <h3>Inicio da Cerimónia:</h3>
+                        <p> Hora prevista para o início da cerimónia matrimonial, na
+                            Basílica Menor de Nossa Senhora da Assunção em Torre de
+                            Moncorvo.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="time">
+                        <h5>14:30</h5>
+                    </div>
+                    <div>
+                        <h3>Caravana</h3>
+                        <p>Hora prevista da partida para a Quinta da Terrincha,
+                            onde permaneceremos o restante do dia.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-cards tab3">
+                <div class="row">
+                    <div class="time">
+                        <h5>15:00H</h5>
+                    </div>
+                    <div>
+                        <h3>Receção aos Noivos</h3>
+                        <p>Nós, já casados, acompanhados da vossa presença, seremos
+                            recebidos na Quinta da Terrincha, com serviço de cocktails e
+                            aperitivos. Posteriormente a estes, serão servidas as entradas.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="time">
+                        <h5>19:00H</h5>
+                    </div>
+                    <div>
+                        <h3>Jantar</h3>
+                        <p>Por esta altura, depois de parte da festa, serão abertas as portas do
+                            salão principal, onde será também servida a refeição principal.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="time">
+                        <h5>02:00</h5>
+                    </div>
+                    <div>
+                        <h3>Ceia</h3>
+                        <p>Ao cair do pano, poderemos disfrutar de uma ceia volante,
+                            acompanhada do bolo dos noivos, em serviço igualmente volante. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Itinerary -->
+
+     <!-- Accommodation -->
+     <section class="accommodation" id="accommodation">
+        <div class="container">
+            <h2>Onde Ficar</h2>
+            <div class="a-cards column">
+                <div class="a-card">
+                    <h3>Quinta da Terrincha</h3>
+                    <p>As Casas de Campo e o Hotel de Charme, estão aliados à
+                        qualidade dos produtos. Após um ótimo pequeno-almoço,
+                        pode disfrutar de um mergulho
+                        na piscina, um passeio relaxante no jardim, ou de um cocktail no
+                        nosso bar.
+                        Como Casas de Campo dispõe de:
+                        6 Villas T1 (Quarto, casa de banho, sala de estar e kitchenette), por 150€.
+                        7 Villas T2 (2 Quartos, 2 casas de banho, sala de estar e kitchenette), por 250€.
+                        1 Villa T3 (3 Quartos, 3 casas de banho, sala de estar e kitchenette), por 360€.
+                        As Villas acima apresentadas permitem a possibilidade de acrescentar uma cama extra, para uma pessoa, com o custo de 30€ ou um sofá-cama, para duas pessoas, pelo custo de 60€.
+                        Todos os preços anteriores dispõem de pequeno-almoço incluído.
+                        No caso de pretender efetuar uma reserva, entre em contacto com os noivos, de modo a gerirmos melhor os espaços e os preços dos mesmos.</p>
+                </div>
+                <div class="a-card">
+                    <h3>Casa Dona Maria Luisa</h3>
+                    <p>A Casa Dona Maria Luiza é um refúgio, 
+                        com todas as condições de conforto, segurança e informalidade para fazer férias em família, 
+                        em grupo, fins-de-semana ou simplesmente escapar da cidade e desfrutar do que melhor tem a região do Douro e Trás-os-Montes. 
+                        É um espaço que proporciona, através da sua equipa e serviços a possibilidade da descoberta de um caminho mais harmonioso 
+                        através de um encontro consigo próprio, do despertar para as potencialidades emocionais, físicas e espirituais dos seus clientes.</p>
+                    <a href="https://www.casadonamarialuiza.com/"  target="_blank" class="page-btn">Reservar</a>
+                </div>
+                <div class="a-card">
+                    <h3>Quintal do Grémio</h3>
+                    <p>O alojamento Quintal do Grémio, fica situado no coração da Vila de Torre de Moncorvo.
+                        Os hóspedes deste alojamento de acomodação e pequeno-almoço podem desfrutar de um pequeno-almoço continental.
+                        Podem ainda relaxar no jardim, ao lado da piscina exterior, no terraço para banhos de sol ou na área de estar partilhada.</p>
+                    <a href="https://www.booking.com/hotel/pt/quintal-do-gremio.pt-pt.html" target="_blank" class="page-btn">Reservar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Accommodation -->
+    
+
+    <!-- RSVP -->
+    <section class="rsvp" id="rsvp">
+        <div class="container">
+            <h2>Respostas</h2>
+            <p>Queridos convidados, confirmem a vossa presença, até dois meses antes, conforme solicitado no convite.
+                Contamos convosco e com a vossa vontade de juntos fazermos a festa.
+            </p>
+            <form action="https://formsubmit.co/carinaandtiago@gmail.com" method="post" >
+                <div class="form row">
+                    <div class="input row">
+                        <label for="">Primeiro Nome <span>*</span></label>
+                        <input type="text" name="first name" id=""required>
+                    </div>
+                    <div class="input row">
+                        <label for="">Último Nome <span>*</span></label>
+                        <input type="text" name="last name" id="" required>
+                    </div>
+                    <div class="input row">
+                        <label for="">Email <span>*</span></label>
+                        <input type="email" name="email" id="" required>
+                    </div>
+                    <div class="input row">
+                        <label for="">Número de Pessoas <span>*</span></label>
+                        <input type="number" name="number of persons" id="" required>
+                    </div>
+                    <div class="input row">
+                        <label for=""> Confirma a tua Presença <span>*</span></label>
+                        <div class="option row">
+                            <div class="row">
+                                <input type="checkbox" name="Yes" id="">
+                                Felizmente estaremos presentes.
+                            </div>
+                            <div class="row">
+                                <input type="checkbox" name="No" id="">
+                                Infelizmente não estaremos presentes.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" valeu="Send" class="page-btn row">Enviar Resposta</button>
+            </form>
+        </div>
+    </section>
+    <!-- ENd RSVP -->
+
+</body>
+
+</html>

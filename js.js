@@ -1,0 +1,57 @@
+// Navigation
+function toggleMenu() {
+    const toggleMenu = document.querySelector(".toggleMenu");
+    const navigation = document.querySelector(".navigation");
+    toggleMenu.classList.toggle("active");
+    navigation.classList.toggle("active");
+
+      // Close the mobile menu when clicking on a navigation link
+      const navLinks = document.querySelectorAll("nav a");
+      navLinks.forEach((link) => {
+          link.addEventListener("click", function () {
+              if (window.innerWidth <= 768) {
+                  navigation.classList.remove("active");
+                  toggleMenu.classList.remove("active");
+              }
+          });
+      });
+}
+// End Navigation
+
+// Swiper Slider
+var swiper = new Swiper(".mySwiper", {
+    effect: "cards",
+    grabCursor: true,
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+});
+// End Swiper Slider
+
+// Filter
+function filterPage(mainClass) {
+    const allTab = document.querySelectorAll(`${mainClass} .filter-btn`);
+
+    allTab.forEach((tab) => {
+        tab.addEventListener("click", function () {
+            console.log("clicked");
+            allTab.forEach((tab) => {
+                tab.classList.remove("active");
+            });
+            this.classList.add("active");
+            const tabContent = document.querySelectorAll(`${mainClass} .filter-cards`);
+            tabContent.forEach((content) => {
+                content.classList.remove("t-active");
+            });
+            const tabActive = document.querySelector(
+                `${mainClass} .tab` + this.dataset.tab
+            );
+            tabActive.classList.add("t-active");
+        });
+    });
+}
+filterPage(".bridal");
+filterPage(".itinerary");
+// End Filter
