@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Your Organization//Your Product//EN
+BEGIN:VEVENT
+UID:uid1@example.com
+DTSTAMP:20240908T100000Z
+DTSTART:20250908T100000Z
+DTEND:20250908T120000Z
+SUMMARY:Matrimonio Cosimo e Valentina
+DESCRIPTION:Il matrimonio di Cosimo e Valentina.
+LOCATION:Santa Maria delle Vergini, Scafati
+END:VEVENT
+END:VCALENDAR
