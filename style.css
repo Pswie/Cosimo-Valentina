@@ -150,10 +150,10 @@ footer a:hover {
     max-width: 100%;
 }
 
-.hero-content {
+/*.hero-content {
     align-items: center;
     min-height: calc(100vh - 141.6px);
-}
+}*/
 
 .hero h2 {
     color: var(--cl--3--);
@@ -269,6 +269,14 @@ footer a:hover {
 }
 
 /* End Venue */
+
+
+
+
+
+
+
+
 
 /* Accommodation */
 .accommodation,
@@ -702,3 +710,63 @@ footer p {
 }
 
 /* End Media */
+
+
+
+
+
+
+/* Venue1 */
+.venue1 {
+    /* background-image: url(./imgs/leaf.svg); */
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+    margin: 4em 0;
+    overflow: hidden;
+}
+
+.venue1-content {
+    background: rgba(252, 249, 247, 0.8);
+}
+
+.venue1 h5,
+.time h5,
+.itinerary h3,
+.form span {
+    color: var(--cl--3--);
+}
+
+.venue1 h2 {
+    padding: 0.2em 0;
+}
+
+.venue1-content div {
+    padding-top: 0.3em;
+}
+
+.venue1-content div p {
+    padding-top: 0.3em;
+}
+
+.mySwiper {
+    position: relative;
+    max-width: 250px;
+}
+
+.mySwiper img {
+    width: 100%;
+    min-height: 300px;
+    object-fit: cover;
+}
+
+/* End Venue */
+
+
+
+
+/*per il me del futuro, se metti foto o video sopra, sta il codice tra parentesi sopra in hero Section*/
+.hero-content {
+    /*align-items: center;*/
+    min-height: calc(60vh - 141.6px);
+}
