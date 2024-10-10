@@ -434,7 +434,6 @@ footer a:hover {
     gap: 3em;
     padding: 1em 0;
     max-width: max-content;
-    overflow-x: scroll;
     margin: 0 auto;
 }
 
