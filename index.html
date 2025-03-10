@@ -46,44 +46,51 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <!--<video src="./video.mp4"controls autoplay loop muted></video> -->
-        <div class="hero-content row container">
-            <div>
-                <h1>Cosimo <span>&</span> Valentina</h1>
-                <h2>08/09/2025 </h2>
-                <br>
-                    <h2>
-    <a href="./calendar.ics" download="Matrimonio Cosimo e Valentina.ics" style="text-decoration: none; border-bottom: 2px solid #E1C699; color: black;">
-        Save the Date
-    </a>
-</h2>
-
+    <div class="hero-content container">
+        <div class="text-center">
+            <h1>Cosimo <span>&</span> Valentina</h1>
+            <h2 class="wedding-date">08/09/2025</h2>
+            <div id="countdown" class="countdown">
+                <div class="countdown-item">
+                    <span id="days">00</span>
+                    <span class="countdown-label">Giorni</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="hours">00</span>
+                    <span class="countdown-label">Ore</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="minutes">00</span>
+                    <span class="countdown-label">Minuti</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="seconds">00</span>
+                    <span class="countdown-label">Secondi</span>
+                </div>
             </div>
+            <a href="./calendar.ics" download="Matrimonio Cosimo e Valentina.ics" class="page-btn save-date-btn">
+                Save the Date
+            </a>
         </div>
-    </section>
-    <!-- ENd Hero Section -->
+    </div>
+</section>
+<!-- End Hero Section -->
 
     <!-- Story -->
     <section class="story" id="story">
         <div class="container">
-            <h1>La Nostra Storia</h1>
+            <h1>Siamo Lieti Di Invitarvi Al Nostro Matrimonio</h1>
+            <br>
             <div class="story-content">
                 <div class="row flex">
                     <div>
-                        <p>Dopo sette anni di vita condivisa, abbiamo deciso di fare un passo importante e di celebrare il nostro amore insieme a voi, le persone che per noi contano di più. In questi anni abbiamo imparato molto l'uno dall'altra: abbiamo riso, affrontato difficoltà e vissuto momenti che ci hanno reso la coppia che siamo oggi.
-                            Sposarci non è solo il coronamento di un percorso, ma l'inizio di una nuova fase che vogliamo condividere con chi è sempre stato al nostro fianco. 
+                        <p>Siamo entusiasti di condividere con voi il nostro speciale viaggio verso il giorno più bello della nostra vita.
+                             Qui troverete tutte le informazioni utili sul nostro matrimonio;dettagli sulla cerimonia ed il ricevimento.
                         </p>
                     </div>
                     <div class="img row"><img src="./imgs/Foto da Pasquale(1).jpg" alt=""></div>
                 </div>
-                <div class="row flex">
-                    <div>
-                        <p> 
-                            È un giorno che non riguarda solo noi, ma anche tutti voi che avete fatto parte della nostra storia, con la vostra amicizia, il vostro supporto e il vostro affetto.
-                            Siamo felici di invitarvi a celebrare insieme a noi questo giorno speciale, dove l'amore, la gioia e la gratitudine saranno i protagonisti. Non vediamo l'ora di condividere questa nuova avventura con voi!</p>
-                    </div>
-                    <div class="img row"><img src="./imgs/Foto da Pasquale.jpg" alt=""></div>
-                </div>
+
             </div>
         </div>
     </section>
@@ -286,50 +293,27 @@
     <!-- RSVP -->
     <section class="rsvp" id="rsvp">
         <div class="container">
-            <h2>La tua risposta</h2>
-            <p>È gradita gentile conferma e comunicazione di eventuali intolleranze alimentari entro il 7 Luglio <br>
-                Cosimo: <a href="https://wa.me/393932074614" target="_blank" style="text-decoration: none; border-bottom: 2px solid #E1C699; color: black;"> 3932074614</a> <br> 
-                Valentina: <a href="https://wa.me/393342882532" target="_blank" style="text-decoration: none; border-bottom: 2px solid #E1C699; color: black;"> 3342882532</a>  
-            </p>
-
-           <!--  <form action="https://formsubmit.co/carinaandtiago@gmail.com" method="post" >
-                <div class="form row">
-                    <div class="input row">
-                        <label for="">Primeiro Nome <span>*</span></label>
-                        <input type="text" name="first name" id=""required>
-                    </div>
-                    <div class="input row">
-                        <label for="">Último Nome <span>*</span></label>
-                        <input type="text" name="last name" id="" required>
-                    </div>
-                    <div class="input row">
-                        <label for="">Email <span>*</span></label>
-                        <input type="email" name="email" id="" required>
-                    </div>
-                    <div class="input row">
-                        <label for="">Número de Pessoas <span>*</span></label>
-                        <input type="number" name="number of persons" id="" required>
-                    </div>
-                    <div class="input row">
-                        <label for=""> Confirma a tua Presença <span>*</span></label>
-                        <div class="option row">
-                            <div class="row">
-                                <input type="checkbox" name="Yes" id="">
-                                Felizmente estaremos presentes.
-                            </div>
-                            <div class="row">
-                                <input type="checkbox" name="No" id="">
-                                Infelizmente não estaremos presentes.
-                            </div>
-                        </div>
-                    </div>
+            <h2>Conferma la tua presenza</h2>
+            <form id="whatsapp-form" class="whatsapp-form">
+                <div class="form-group">
+                    <label for="name">Nome e Cognome</label>
+                    <input type="text" id="name" name="name" required>
                 </div>
-                <button type="submit" valeu="Send" class="page-btn row">Enviar Resposta</button>
-            </form>RSVP -->
+                <div class="form-group">
+                    <label for="guests">Numero di ospiti</label>
+                    <input type="number" id="guests" name="guests" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Allergie e intolleranze </label>
+                    <textarea id="message" name="message" rows="3"></textarea>
+                </div>
+                <button type="submit" class="page-btn">Conferma presenza</button>
+            </form>
         </div>
     </section>
-    <!-- ENd RSVP -->
+    <!-- End RSVP -->
 
 </body>
 
 </html>
+
