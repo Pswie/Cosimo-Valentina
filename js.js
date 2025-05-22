@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const guests = document.getElementById("guests").value
     const message = document.getElementById("message").value
 
-    const whatsappMessage = `Ciao Valentina, sono ${name}. Confermo la mia presenza al matrimonio con ${guests} ospiti. ${message ? "Allergeni e Intolleranze: " + message : ""}`
+    const whatsappMessage = `Ciao Valentina, sono ${name}. Confermo la mia presenza al matrimonio con ${guests} ospiti. ${message ? "Allergie e intolleranze: " + message : ""}`
 
     const whatsappNumber = "393342882532" // Numero di Valentina
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`
